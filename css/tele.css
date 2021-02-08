@@ -1,0 +1,228 @@
+body{
+    max-width: 90%;
+    max-height: 2000px;
+    background-image: url(../images/backgroundweb.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    margin: 0 auto;
+}
+
+#global{
+    max-width: 1500px;
+    margin: 15px auto;
+}
+
+header{
+    /* max-width: 1500px; */
+    height: 579px;
+    max-width: 100%;
+    background-image: url(../images/unnamed.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*----------------------------------------------------------------------------------------------------------------
+                                                NAVIGATION
+----------------------------------------------------------------------------------------------------------------*/
+nav{
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 38px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px;
+}
+
+nav ul a:hover{
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    text-decoration: underline;
+}
+
+.actif{
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------
+                                                SECTION
+------------------------------------------------------------------------------------------------------------------------ */
+section{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(135,206,235,0.5);
+    border: 1px solid black;
+    box-shadow: -4px 2px 27px 12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -4px 2px 27px 12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 2px 27px 12px rgba(0,0,0,0.75);
+    padding: 50px;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+}
+
+p{
+    font-size: 3em;
+    text-align: center;
+}
+
+p img{
+    width: 47px;
+}
+
+audio{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.additionnel{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid black;
+}
+
+footer img{
+    width: 50px;
+    padding: 34px;
+}
+
+aside{
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------
+                                                CHANGEMENT D'ÉCRAN
+--------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1440px){
+    body{
+        max-width: 71%;
+    }
+
+    header{
+        background-image: url(../images/unnamed.png);
+        background-size: contain;
+        height: 404px;
+    }
+
+    header img{
+        margin-right: 27px;
+    }
+
+    ul{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    header{
+        height: 283px;
+    }
+
+    header img{
+        width: 91px;
+        margin-right: 21px;
+    }
+
+    nav ul{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+
+    /* ------------------------- */
+}
+
+@media screen and (max-width: 768px){
+    body{
+        max-width: 85%;
+    }
+
+    header{
+        height: 254px;
+    }
+
+    nav ul{
+        font-size: 11px;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 425px){
+    header{
+        height: 170px;
+    }
+
+    nav ul a{
+        margin-bottom: 12px;
+        border: 3px solid white;
+    }
+
+    nav ul{
+        flex-direction: column;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .additionnel{
+        flex-direction: column;
+    }
+
+    footer{
+        display: block;
+        margin: 0 auto;
+    }
+
+    aside{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
